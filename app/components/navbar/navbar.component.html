@@ -1,0 +1,21 @@
+<main class="navbarLayout">
+  <h1 class="logo">
+    Secure File Transmission System
+  </h1>
+  <div class="mid-section">
+    <div (click)="navigateToHome()" class="home">
+      Home
+    </div>
+    <div (click)="navigateToCityGuides()" class="cityGuides">
+      About us
+    </div>
+  </div>
+
+  <div class="singup-login" *ngIf="!isLoggedIn; else loggedInDropdown">
+    <button (click)="navigateToLogin()" class="signin">Login</button>
+    <button (click)="navigateToSignup()" class="signup">Sign Up</button>
+  </div>
+  <ng-template #loggedInDropdown>
+    <app-dropdown></app-dropdown>
+  </ng-template>
+</main>

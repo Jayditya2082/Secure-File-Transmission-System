@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.main{
+    /* background-color: blue; */
+    padding-left: 130px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+.profile-photo{
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+
+
+.title{
+    margin-top: 10px;
+    /* background-color: red; */
+    text-align: left;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Plus Jakarta Sans';
+    padding-left: 200px;
+    padding-right: 150px;
+}
+.author{
+    margin-top: 30px;
+    /* background-color: aqua; */
+    padding-left: 200px;
+    padding-right: 150px;
+    display: flex;
+   align-items: center;
+    
+}
+.profilePic{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  background-color: #bbb;
+  border-radius: 50%;
+  /* display: inline-block; */
+}
+
+.authorName{
+    margin-left: 10px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: bold;
+}
+
+.placesLayout{
+    /* border: 2px solid green;   */
+    width: 50%;
+    /* background-color: violet; */
+    margin-left: 300px;
+    padding-bottom: 20px;
+}
+
+  .slide-container {
+    margin: 25vh auto 0 auto;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+  }
+  img {
+    width: 20%;
+  }
+  
+  .image-container {
+    display: inline-block;
+    width: 3000px;
+    height: 300px;
+    position: relative;
+    transition: left 2s;
+    animation: slide 15s infinite;
+  }
+  .slider-image {
+    float: left;
+  }
+  
+  .button-container {
+    position: relative;
+    top: 10px;
+  }
+  
+  .slider-button {
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgba(white, 0.5);
+  }
+  .slider-button:hover {
+    background-color: rgba(white, 0.7);
+  }
+  
+  #slider1:target ~ .image-container {
+    left: 0px;
+  }
+  #slider2:target ~ .image-container {
+    left: -600px;
+  }
+  #slider3:target ~ .image-container {
+    left: -1200px;
+  }
+  #slider4:target ~ .image-container {
+    left: -1800px;
+  }
+  #slider5:target ~ .image-container {
+    left: -2400px;
+  }
+  
+  .image-container:hover {
+    animation: slide 10s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: -600px;
+    }
+    40% {
+        left: -1200px;
+    }
+    60% {
+        left: -1800px;
+    }
+    80% {
+        left: -2400px;
+    }
+    100% {
+        left: 0;
+    }
+  }
+
+  .placeTitle{
+    height: 30px;
+    padding-top: 10px;
+    width: auto;
+    /* background-color: chartreuse; */
+    padding-left: 100px;
+    margin-bottom: 0px;
+    padding-right: 150px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Plus Jakarta Sans';
+  }
+  .placeDesc{
+    padding-left: 100px;
+    padding-right: 150px;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans';
+  }
+
+  .placePrice{
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Plus Jakarta Sans';
+  }
+
+  .likeBlog{
+    /* background-color: saddlebrown; */
+    height: 30px;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 10px;
+    align-items: center;
+    padding-right: 150px;
+    display:flex;
+    justify-content: space-around;
+  }
+
+  .blogComment{
+    /* height: 200px; */
+    margin-top: 10px;
+    /* background-color: rosybrown; */
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .commentBox{
+    width: 700px;
+    height: 70px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .otherComments{
+    margin-top: 30px;
+    /* height: 100px; */
+    /* background-color: red; */
+    margin-right: 370px;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .likeBtn{
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid grey;
+    background-color: white;
+    margin-right: 200px;
+  }
+
+  .flagBtn{
+    width: 130px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF5722;
+  }
+.sendBtn,.bookBtn{
+  width: 130px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #7413F2 ;
+}
+
+.mapsDetails{
+  width: auto;
+  height: 100px;
+  /* background-color: red; */
+  display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+
+.bookBtn{
+  margin-right: 50px;
+}
